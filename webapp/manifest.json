@@ -142,7 +142,6 @@
                     "widthIncludingColumnHeader": true,
                     "personalization": {
                       "column": true,
-                      "filter": true,
                       "sort": true
                     },
                     "condensedTableLayout": true
@@ -150,7 +149,20 @@
                 }
               },
               "initialLoad": "Enabled",
-              "defaultTemplateAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionPresentationVariant#table"
+              "defaultTemplateAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionPresentationVariant#table",
+              "views": {
+                "paths": [
+                  {
+                    "key": "table",
+                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionPresentationVariant#table"
+                  },
+                  {
+                    "key": "tableView",
+                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionPresentationVariant#tableView",
+                    "entitySet": "ProductDetails"
+                  }
+                ]
+              }
             }
           }
         },
